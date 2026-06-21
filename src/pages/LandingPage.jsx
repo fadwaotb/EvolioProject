@@ -2,7 +2,6 @@ import { Link } from "react-router-dom";
 import { Navbar, Button, Card } from "../components/Components.jsx";
 import { Rocket, Users, Eye, FileText, MessageSquare, Share2 } from "lucide-react";
 
-// Landing Page - the first page people see at "/"
 export default function LandingPage() {
   return (
     <div>
@@ -94,23 +93,15 @@ export default function LandingPage() {
         <Card className="text-center">
           <h2 className="text-2xl font-bold text-gray-800">For Teams</h2>
           <p className="mx-auto mt-2 max-w-xl text-sm text-gray-500">
-            Bootcamps, coaches, and employers use Evolio to track student progress,
-            review portfolios, and discover new talent - all in one place.
+            Collaborate seamlessly with your team members. Track project milestones, manage tasks, 
+            and build industry-ready portfolios together in one shared workspace.
           </p>
-          <div className="mt-6 flex justify-center gap-3">
-            <Link to="/coach/dashboard">
-              <Button variant="outline">Coach Dashboard</Button>
-            </Link>
-            <Link to="/employer/dashboard">
-              <Button variant="teal">Employer Dashboard</Button>
-            </Link>
-          </div>
         </Card>
       </section>
 
       {/* Simple footer */}
       <footer className="border-t border-gray-200 bg-white px-6 py-6 text-center text-sm text-gray-400">
-        © 2026 Evolio - A student bootcamp project
+        © 2026 Evolio
       </footer>
     </div>
   );
